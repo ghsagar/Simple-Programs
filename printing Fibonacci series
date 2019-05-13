@@ -1,0 +1,19 @@
+#creating fibonacci series
+def fibbonacci_series(n):
+    a=0
+    b=1 
+    if n==a:
+        print(a)
+    elif n==b:
+        print(a,b)
+    else:
+        
+        print(a,b, end=",")
+        for i in range(n-2):
+            c=a+b 
+            a=b 
+            b=c 
+            print(b,end=",")
+times=int(input("please enter times:"))
+print(fibbonacci_series(times))
+
