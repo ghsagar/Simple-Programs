@@ -1,0 +1,8 @@
+# reversing the list of strings inside a list
+my_list=["Sagar","and", "Shyam"]
+def rev_items(num_list):
+    empty_list=[]
+    for i in my_list:
+        empty_list.append(i[::-1])
+    return empty_list
+print(rev_items(my_list))
