@@ -1,0 +1,12 @@
+ #common element finder function:
+list1=[1,2,3,4,5]
+list2=[1,2,3]
+def common_finder(first_list, second_list):
+    empty_list=[]
+    for i in first_list:
+        for j in second_list:
+            if i==j:
+                empty_list.append(i)
+    return empty_list
+    
+print(common_finder(list1, list2))
