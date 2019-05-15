@@ -1,0 +1,15 @@
+#even and odd number separator
+my_list=[1,2,3,4,5,6,7,8,9,10]
+
+
+def odd_even_separator(num_list):
+    empty_even=[]
+    empty_odd=[]
+    new_list=[empty_even,empty_odd ]
+    for i in my_list:
+        if (i%2)==0:
+            empty_even.append(i)
+        else:
+            empty_odd.append(i)
+    return new_list
+print(odd_even_separator(my_list))
