@@ -1,0 +1,9 @@
+# reversing the list using append and pop
+my_list=["Sagar","shkyam","parbat","Prateer","Apekshya"]
+def reverse_list(num_list):
+    empty_list=[]
+    for i in range(0,len(num_list)):
+        empty_list.append(num_list.pop())
+    return empty_list
+    
+print(reverse_list(my_list))
