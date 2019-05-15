@@ -1,0 +1,13 @@
+#function that counts number of list inside list
+my_list=[1,2,3,[5,6,7,9],[1,2,3],[11,12],12,14]
+
+def number_of_list(num_list):
+    count=0
+    i=0
+    while i<len(num_list):
+        if type(num_list[i])==list:
+            count+=1
+        
+        i+=1
+    return count
+print(number_of_list(my_list))
