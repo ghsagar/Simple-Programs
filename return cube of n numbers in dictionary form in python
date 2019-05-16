@@ -1,0 +1,8 @@
+#functions that returns the dictinary of cube of n numbers
+number=int(input("please enter a number:"))
+def dictionary_cube(n):
+    empty_dict={}
+    for i in range(1, n+1):
+        empty_dict[i]=i**3
+    return empty_dict
+print(dictionary_cube(number))
