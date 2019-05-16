@@ -1,0 +1,7 @@
+name="sSagar"
+def word_counter(word):
+    empty={}
+    for i in word:
+        empty[i]=word.count(i)
+    return empty
+print(word_counter(name))
