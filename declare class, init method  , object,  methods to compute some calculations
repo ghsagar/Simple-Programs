@@ -1,0 +1,13 @@
+#declare class, create two object/instances, and peform method implementation
+class Laptop:
+    def __init__(self,brand_name,model_name,price):
+        self.brand=brand_name
+        self.model=model_name
+        self.price=price
+    def discounted_price(self, discount_percentage):
+        new_price=round(self.price-(self.price*(discount_percentage/100)))
+        return new_price
+laptop1=Laptop("Dell", "Inspiran 1379", 860)
+laptop2=Laptop("Apple","Airmax", 1399)
+print(laptop2.discounted_price(41.5))
+ 
