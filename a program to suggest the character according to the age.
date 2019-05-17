@@ -1,0 +1,25 @@
+# age class
+class Person:
+    def __init__(self, initialAge):
+        self.age=initialAge
+        if self.age<0:
+            print ("not valid age, setting age to 0")
+            self.age=0
+    def character(self):
+        if self.age<13:
+            print("you are young")
+        elif self.age>=13 and self.age<16:
+            print ("you are a teenager")
+        else:
+            print( "you are old")
+    def year_passes(self):
+        self.age+=1
+        self.age
+        
+Sagar=Person(12)
+Sagar.character()
+Sagar.year_passes()
+Sagar.year_passes()
+Sagar.year_passes()
+Sagar.character()
+ 
