@@ -1,0 +1,5 @@
+#List Comprehension method to reverse list of strings
+my_list=["Sagar", "Shyam"]
+def reverse(l):
+    return [i[::-1] for i in l]
+print(reverse(my_list))
