@@ -1,0 +1,26 @@
+#program that takes integer from the list present 
+my_list=["Sagar", "Shyam", 1,2,[3,4],{"num1":7,"num2":8},(10,11),{0,6}]
+empty=[]
+for i in my_list:
+    if type(i)==int or type(i)==str:
+        if type(i)==int:
+            empty.append(i)
+    elif type(i)==list:
+        for l in i:
+            if type(l)==int:
+                empty.append(l)
+    elif type(i)==set:
+        for s in i:
+            if type(s)==int:
+                empty.append(s)
+    elif type(i)==tuple:
+        for t in i:
+            if type(t)==int:
+                empty.append(t)
+    elif type(i)==dict:
+        for key, value in i.items():
+            if type(value)==int:
+                empty.append(value)
+            
+empty.sort()
+print(empty)
