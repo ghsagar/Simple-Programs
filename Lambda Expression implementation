@@ -1,0 +1,4 @@
+# Use of lambda function
+# check if given number is even or odd without defining a function
+checker=lambda number: "is even" if number%2==0 else "is odd"
+print(checker(13))
