@@ -1,0 +1,8 @@
+# define a function that that take list as a paramenter and returns the items of list with first letter of the list string capital
+# Howver (if reverse_str==True) the function return the reverse of string with first letter capital
+def func(l,**kwargs):
+    if kwargs.get("reverse_str"):
+        return [i[::-1].title() for i in l]
+    else:
+        return [i.title() for i in l]
+print(func(["sagar","shyam" ], reverse_str=True))
