@@ -1,0 +1,22 @@
+ #using map functions with lambda
+ # return the square of items in list
+ # I am going to do by traditional method first
+my_list=[1,2,3,4,5]
+
+#empty_list=[]
+#def func(l):
+#    for i in l:
+#        empty_list.append(i**2)
+#    return empty_list
+#print(func(my_list))
+
+# Now I am going to do with list comprehension
+#new_list=[i**2 for i in my_list]
+#print(new_list)
+
+
+ # Now I am going to do it with map function implementation method:
+
+ 
+new_list=list(map(lambda a:a**2, my_list))
+print(new_list)
