@@ -1,0 +1,16 @@
+#l enumerate keyword to find the position of item in list
+# define a function that takes two parameter: List and name
+# return the position of name in list if present else return -1
+hey=input("enter the list of items using comma").split(",")
+print(hey) 
+name=input("enter the name you want to search:")
+
+def func(l, name):
+    for position, value in enumerate(l):
+        if value==name:
+            return(position)
+     
+         
+    return ("not")
+print(func(hey, name))
+        
