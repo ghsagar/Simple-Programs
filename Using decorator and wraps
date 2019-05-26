@@ -1,0 +1,22 @@
+ # using decorators and import wrap from functools
+# using __doc__
+#task:: add functionality called " you are adding two numbers " to the function that adds two numbers
+
+from functools import wraps 
+def decorator(any_function):
+    @wraps(any_function)
+    def adding_functionality(*args):
+        print(any_function.__doc__)
+        return any_function(*args)
+    return adding_functionality
+#@decorator    
+#def add(a, b):
+#    """adding two numbers and returning their sum"""
+#    return a+b 
+#print(add(2,3))
+@decorator
+def sub(a,b):
+    """subtracting two numbers and returning their differences"""
+    return abs(a-b)
+print(sub(6,9))
+    
