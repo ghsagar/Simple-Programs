@@ -1,0 +1,14 @@
+# how to enhance the functionality of any function. 
+# For example, odd function() returns " I am odd", and what if you want it also return " I am happy " 
+# Without adding statement in odd functions()
+# decorator can peform multi functions when one function is called upon
+def decorator(somefunc):
+    def anotherstatement():
+        print(" I ma happy")
+        return somefunc()
+    return anotherstatement
+@decorator    
+def odd():
+    return ( " I am odd person")
+    
+print(odd())
