@@ -1,0 +1,9 @@
+#Passing Function as an argument 
+def trip(l):
+    return l**3
+def func(any_func, l):
+    sto=[]
+    for i in l:
+        sto.append(any_func(i))
+    return sto
+print(func(trip, [1,2,3]))
