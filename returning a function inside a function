@@ -1,0 +1,7 @@
+#returning a function inside a function
+def to(number):
+    def do(power):
+        return number**power
+    return do
+var=to(9)
+print(var(3))
