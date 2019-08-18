@@ -1,0 +1,20 @@
+def FindPrimeFactor(n):
+    factors=[]
+    for i in range(2, n):
+        if n%i==0:
+            factors.append(i)
+    print(factors)
+    primeFactor=[]
+    for eachitems in factors:
+        isPrimeFactor=True
+        for j in range(2, eachitems):
+            if eachitems % j ==0:
+                isPrimeFactor=False
+        if isPrimeFactor:
+            primeFactor.append(eachitems)
+    return primeFactor
+        
+             
+             
+print(FindPrimeFactor(50))
+             
