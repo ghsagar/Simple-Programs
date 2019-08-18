@@ -1,0 +1,27 @@
+colors=[1,1,1,2,2,2,3,5,6,7,8,9,0,9 ]
+pairs=0
+uneven = []
+for i in range(0,len(colors)):
+    isPair = False
+    for e in range(0, len(uneven)):
+        if(colors[i] == uneven[e]):
+            # remove uneven value at index e 
+            del uneven[e]
+            pairs+=1
+            # pairs++
+            # isPair = true;
+            isPair=True
+            break
+
+    if(isPair==False):
+        uneven.append(colors[i])
+    
+    
+            
+    
+           
+           
+        
+print(pairs)
+print(uneven)
+         
