@@ -1,0 +1,25 @@
+s=["D","U", "D","U", "U","U","D","D","U","D"]
+#consider that I am at the sea level initially
+#current position==0
+# valley ==0 which means that I do not have any valley and mountains
+# if my current position is 0 and I moved up, count it as one valley
+# if my current position is 0 and I moved down, count is as one mountain
+
+# We are going to count number of valleys and mountains
+
+current=0
+valley=0
+mountain=0
+for step in s:
+    if step=="U":
+        current+=1 
+        if current==0:
+            valley+=1 
+    elif step=="D":
+        current-=1
+        if current==0:
+            mountain+=1
+    else:
+        pass
+print(valley)
+print(mountain)
