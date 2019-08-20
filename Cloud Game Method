@@ -1,0 +1,10 @@
+#Cloud game  
+random=[0, 0 ,0, 1, 0, 0]
+jumps=0
+i=0
+while i<len(random)-1:
+    if  i+2< len(random) and random[i+2] ==0:
+        i+=1 
+    jumps+=1 
+    i+=1
+print(jumps)
