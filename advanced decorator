@@ -1,0 +1,19 @@
+#Now I am going to show how advanced decorator works
+
+def decorators(anyfunction):
+  def wrapper(*args,**kwargs):
+    print("the sum is")
+    return anyfunction(*args,**kwargs)
+  return wrapper
+@decorators
+def add1(a,b):
+  return a+b 
+
+@decorators
+def add2(a,b):
+  return a+b
+  # here what if I want to print, "the sum is" on both functions
+  # here comes the use of decorators to increase the functionality 
+
+print(add1(2,1))
+print(add2(1,3))
