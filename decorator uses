@@ -1,0 +1,24 @@
+# Lets learn decorators
+# Uses: Increase the functionality of functions 
+# syntax: @Decorator before the function to add functionality to
+def decoratorfunction(anyfunction):
+  def wrapperfunction():
+    print("I am awesome")
+    anyfunction()
+  return wrapperfunction
+
+
+@decoratorfunction     # using decorator function before function
+def functionone():
+  print("Hey I am function one")
+@decoratorfunction
+def functiontwo():
+  print("Hey I am function two")
+
+#What if I want to add " I am awesome" into both function? 
+# so we use decorator ...see above at 4
+# store=decoratorfunction(functionone)
+# store()
+
+functionone()
+functiontwo()
