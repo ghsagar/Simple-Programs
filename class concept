@@ -1,0 +1,27 @@
+# a program that can calculate discount automaticaly and also gives some properties of the car 
+class car:
+  def __init__(self, name, model, price,discount=0):
+    self.name=name
+    self.model=model
+    self.price=price
+    self.discount=discount
+  def discounted(self):
+    discounted_amount=(self.price*self.discount)/100
+    return(discounted_amount)
+
+  def offer_price(self):
+    #discounted_amount=(self.price*15)/100
+    return (self.price - self.discounted())
+
+  def total_price(self, taxpercentage):
+    return(self.offer_price()+self.offer_price()*(taxpercentage)/100)
+
+car1=car("hundai" ,"xpv31",4000,25)
+car2=car("hundai" ,"xpv31",4000)
+print(car1.discounted())
+print(car2.discounted())
+print(car1.offer_price())
+print(car2.offer_price())
+print(car1.total_price(7))
+print(car2.total_price(10))
+ 
